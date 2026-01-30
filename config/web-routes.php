@@ -1,6 +1,6 @@
 <?php
-namespace Fauza\Template\Config;
-use Fauza\Template\Controllers\MainController;
+namespace LogsRoyale\Config;
+use LogsRoyale\Controllers\MainController;
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();

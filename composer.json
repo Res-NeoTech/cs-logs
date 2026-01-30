@@ -1,14 +1,14 @@
 {
-    "name": "fauza/template",
-    "description": "Best template of all time !!!",
+    "name": "LogsRoyale",
+    "description": "",
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Fauza\\Template\\": "src/"
+            "LogsRoyale\\": "src/"
         }
     },
     "authors": [{
-        "name": "FauZaPespi"
+        "name": "I.DA-P3A"
     }],
     "license": "Palms",
     "minimum-stability": "stable",
