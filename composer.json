@@ -1,6 +1,6 @@
 {
-    "name": "LogsRoyale",
-    "description": "",
+    "name": "logsroyale/m110",
+    "description": "Projet M110",
     "type": "project",
     "autoload": {
         "psr-4": {
