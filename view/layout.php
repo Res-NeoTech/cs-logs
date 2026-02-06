@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $title ?></title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <style>
     </style>
 </head>
@@ -27,8 +28,6 @@
 
                 <nav class="hidden gap-6 text-sm text-slate-300 md:flex">
                     <a href="/" class="hover:text-white transition">Home</a>
-                    <a href="/player" class="hover:text-white transition">Player</a>
-                    <a href="/clan" class="hover:text-white transition">Clan</a>
                 </nav>
             </div>
         </header>

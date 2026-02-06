@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: slim_php
+    container_name: cs-logs-php
     volumes:
       - .:/var/www/html
     networks:
@@ -13,7 +13,7 @@ services:
   # Service Nginx (Le serveur web)
   web:
     image: nginx:alpine
-    container_name: slim_nginx
+    container_name: cs-logs-web
     ports:
       - "${APP_PORT:-8000}:80"
     volumes:
