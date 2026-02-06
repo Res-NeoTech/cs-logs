@@ -1,10 +1,10 @@
 {
-    "name": "logsroyale/m110",
+    "name": "cslogs/m110",
     "description": "Projet M110",
     "type": "project",
     "autoload": {
         "psr-4": {
-            "LogsRoyale\\": "src/"
+            "CsLogs\\": "src/"
         }
     },
     "authors": [{
