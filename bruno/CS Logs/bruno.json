@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "CS Logs",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Get prices
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://market.csgo.com/api/v2/prices/USD.json
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{API_KEY}}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
