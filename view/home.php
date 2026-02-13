@@ -1,8 +1,5 @@
 <?php 
 
-use CsLogs\Models\Item;
-
-$items = Item::selectAll("AK-47");
 
 ?>
 
@@ -24,6 +21,7 @@ $items = Item::selectAll("AK-47");
           <td><?= htmlspecialchars($item->name) ?></td>
           <td><?= number_format($item->price, 2) ?></td>
           <td><?= $item->volume ?></td>
+          <td><a href="/item/<?= $item->id ?>" class="btn btn-primary">Details</a></td>
         </tr>
       <?php endforeach; ?>
     </tbody>
