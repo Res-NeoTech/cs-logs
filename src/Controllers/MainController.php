@@ -8,7 +8,6 @@ use Psr\Log\LoggerInterface;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Views\PhpRenderer;
-use CsLogs\Models\Item;
 
 class MainController
 {
@@ -17,8 +16,8 @@ class MainController
 
     public function __construct(LoggerInterface $logger)
     {
-        Item::selectAll("AK-47");
-
+        $this->logger = $logger;
+    }
     public function home(Request $req, Response $resp, array $args): Response
     {
         $view = new PhpRenderer("../view");
@@ -115,7 +114,7 @@ class MainController
                 return [];
             }
 
-            $decoded = json_decode($cachedItems);
+            $decoded = json_decode($cachedItems, true);
             if (json_last_error() !== JSON_ERROR_NONE || !is_array($decoded)) {
                 $this->logger->warning('Invalid cache payload for items', [
                     'cache_key' => self::CACHE_KEY,
