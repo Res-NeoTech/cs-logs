@@ -7,41 +7,71 @@ class Item {
     public ?string $name = null;
     public ?float $price = null;
     public ?int $volume = null;
+    public ?array $history = [];
     public static array $items = []; 
 
     public static function selectAll(?string $nameFilter = null): array
     {
-        $path = __DIR__ . '/../logs/prices/prices_20260206_151000.json';
-
-        if (!file_exists($path)) {
+        $dir = __DIR__ . '/../logs/prices/';
+        
+        if (!is_dir($dir)) {
             return [];
         }
 
-        $json = file_get_contents($path);
-        $data = json_decode($json, true);
+        $files = glob($dir . '*.json');
 
-        if (!isset($data['items'])) {
+        if (!$files) {
             return [];
         }
 
-        self::$items = [];
+        // Sort files by date (oldest first)
+        usort($files, function($a, $b) {
+            preg_match('/prices_(\d{8}_\d{6})\.json$/', $a, $matchA);
+            preg_match('/prices_(\d{8}_\d{6})\.json$/', $b, $matchB);
+            return strcmp($matchA[1] ?? '', $matchB[1] ?? '');
+        });
 
-        foreach ($data['items'] as $index => $row) {
+        $itemsHistory = [];
 
-            $name = $row['market_hash_name'] ?? null;
+        // Load all items first (no filtering yet)
+        foreach ($files as $file) {
+            $json = file_get_contents($file);
+            $data = json_decode($json, true);
 
-            // Filter by name if filter provided
-            if ($nameFilter !== null && stripos($name, $nameFilter) === false) {
-                continue;
+            if (!isset($data['items'])) continue;
+
+            foreach ($data['items'] as $row) {
+                $name = $row['market_hash_name'] ?? null;
+                if (!$name) continue;
+
+                $snapshot = [
+                    'price' => isset($row['price']) ? (float)$row['price'] : null,
+                    'volume' => isset($row['volume']) ? (int)$row['volume'] : null,
+                    'timestamp' => self::extractTimestamp($file)
+                ];
+
+                $itemsHistory[$name][] = $snapshot;
             }
+        }
 
+        // Build Item objects and assign IDs BEFORE filtering
+        self::$items = [];
+        $id = 1;
+        foreach ($itemsHistory as $name => $history) {
             $item = new Item();
-            $item->id = $index + 1;
+            $item->id = $id++;
             $item->name = $name;
-            $item->price = isset($row['price']) ? (float)$row['price'] : null;
-            $item->volume = isset($row['volume']) ? (int)$row['volume'] : null;
+            $item->price = $history[count($history)-1]['price'];
+            $item->volume = $history[count($history)-1]['volume'];
+            $item->history = $history;
 
             self::$items[] = $item;
+        }
+
+        if ($nameFilter !== null) {
+             self::$items = array_values(array_filter(self::$items, fn($item) =>
+                stripos($item->name, $nameFilter) !== false
+            ));
         }
 
         return self::$items;
@@ -59,6 +89,14 @@ class Item {
             }
         }
 
+        return null;
+    }
+
+    private static function extractTimestamp(string $file): ?string
+    {
+        if (preg_match('/prices_(\d{8}_\d{6})\.json$/', $file, $match)) {
+            return $match[1]; // e.g., 20260206_151000
+        }
         return null;
     }
 

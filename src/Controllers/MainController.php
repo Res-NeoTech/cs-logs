@@ -7,12 +7,11 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Views\PhpRenderer;
 use CsLogs\Models\Item;
 
-
 class MainController
 {
     function home(Request $req, Response $resp, array $args): Response
     {
-        Item::selectAll("AK-47");
+        Item::selectAll("AK-47 | Aphrodite ");
 
         $view = new PhpRenderer("../view");
         $view->setLayout("layout.php");

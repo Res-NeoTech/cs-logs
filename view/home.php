@@ -19,6 +19,7 @@
         <tr class="hover:bg-base-300">
           <th><?= $index + 1 ?></th>
           <td><?= htmlspecialchars($item->name) ?></td>
+          <td><?= htmlspecialchars($item->id) ?></td>
           <td><?= number_format($item->price, 2) ?></td>
           <td><?= $item->volume ?></td>
           <td><a href="/item/<?= $item->id ?>" class="btn btn-primary">Details</a></td>
