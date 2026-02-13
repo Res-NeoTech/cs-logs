@@ -19,10 +19,11 @@
         ?>
         <tr class="hover:bg-base-300">
           <th><?= $index + 1 ?></th>
-          <td><?= htmlspecialchars((string) $name) ?></td>
-          <td><?= number_format((float) $price, 2) ?></td>
-          <td><?= (int) $volume ?></td>
-          <td><a href="/item/<?= (int) $id ?>" class="btn btn-primary">Details</a></td>
+          <td><?= htmlspecialchars($item->name) ?></td>
+          <td><?= htmlspecialchars($item->id) ?></td>
+          <td><?= number_format($item->price, 2) ?></td>
+          <td><?= $item->volume ?></td>
+          <td><a href="/item/<?= $item->id ?>" class="btn btn-primary">Details</a></td>
         </tr>
       <?php endforeach; ?>
     </tbody>

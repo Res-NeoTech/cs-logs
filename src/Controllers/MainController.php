@@ -8,6 +8,7 @@ use Psr\Log\LoggerInterface;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Views\PhpRenderer;
+use CsLogs\Models\Item;
 
 class MainController
 {
@@ -16,8 +17,7 @@ class MainController
 
     public function __construct(LoggerInterface $logger)
     {
-        $this->logger = $logger;
-    }
+        Item::selectAll("AK-47");
 
     public function home(Request $req, Response $resp, array $args): Response
     {
