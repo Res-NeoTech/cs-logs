@@ -1,5 +1,22 @@
-<?php 
+<?php
 
+use CsLogs\Models\Item;
+use CsLogs\Utils\Redis;
+
+$redis = Redis::get();
+
+$items = $redis->get("item:AK-47");
+
+if (is_string($items)) {
+  $decoded = json_decode($items);
+  $items = json_last_error() === JSON_ERROR_NONE ? $decoded : [];
+}
+
+if (empty($items)) {
+  $items = Item::selectAll("AK-47");
+
+  $redis->set("item:AK-47", json_encode($items), 'EX', 60 * 5);
+}
 
 ?>
 

@@ -42,7 +42,7 @@
                         CSGO Market price
                     </h1>
                     <p class="mt-1 text-sm text-slate-400">
-                        Real-time player & clan analytics powered by the official API
+                        Real-time market csgo price by the official API
                     </p>
                 </div>
 
