@@ -38,6 +38,7 @@ if (empty($items)) {
           <td><?= htmlspecialchars($item->name) ?></td>
           <td><?= number_format($item->price, 2) ?></td>
           <td><?= $item->volume ?></td>
+          <td><a href="/item/<?= $item->id ?>" class="btn btn-primary">Details</a></td>
         </tr>
       <?php endforeach; ?>
     </tbody>

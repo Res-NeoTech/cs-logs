@@ -7,31 +7,30 @@ class Item {
     public ?string $name = null;
     public ?float $price = null;
     public ?int $volume = null;
+    public static array $items = []; 
 
     public static function selectAll(?string $nameFilter = null): array
     {
-        // Path to JSON file
         $path = __DIR__ . '/../logs/prices/prices_20260206_151000.json';
 
-        // Check if file exists
         if (!file_exists($path)) {
             return [];
         }
 
-        // Read file
         $json = file_get_contents($path);
         $data = json_decode($json, true);
-
-        $items = [];
 
         if (!isset($data['items'])) {
             return [];
         }
 
+        self::$items = [];
+
         foreach ($data['items'] as $index => $row) {
 
             $name = $row['market_hash_name'] ?? null;
 
+            // Filter by name if filter provided
             if ($nameFilter !== null && stripos($name, $nameFilter) === false) {
                 continue;
             }
@@ -42,9 +41,9 @@ class Item {
             $item->price = isset($row['price']) ? (float)$row['price'] : null;
             $item->volume = isset($row['volume']) ? (int)$row['volume'] : null;
 
-            $items[] = $item;
+            self::$items[] = $item;
         }
 
-        return $items;
+        return self::$items;
     }
 }

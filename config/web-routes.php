@@ -9,4 +9,6 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
 $app->get('/', [MainController::class, 'home']);
+$app->get('/item/{id}', [MainController::class, 'itemDetails']);
+
 $app->get('/api', [MainController::class, 'api']);
