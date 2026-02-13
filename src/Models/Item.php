@@ -49,9 +49,7 @@ class Item {
 
     public static function getById(int $id): ?Item
     {
-        if (empty(self::$items)) {
-            self::selectAll();
-        }
+        self::selectAll("AK-47");
 
         foreach (self::$items as $item) {
             if ($item->id === $id) {

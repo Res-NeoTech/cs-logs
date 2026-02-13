@@ -1,0 +1,19 @@
+[2026-02-13 12:59:41] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 12:59:41] INFO: Route home entered 
+[2026-02-13 12:59:41] INFO: Cache miss, loading items from source {"filter":"AK-47"}
+[2026-02-13 12:59:41] INFO: HTTP request completed {"method":"GET","path":"/","status":200,"duration_ms":649.59}
+[2026-02-13 13:00:06] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:00:06] INFO: Route home entered 
+[2026-02-13 13:00:06] INFO: Cache hit for homepage items {"cache_key":"item:AK-47","count":487}
+[2026-02-13 13:00:06] INFO: HTTP request completed {"method":"GET","path":"/","status":200,"duration_ms":464.38}
+[2026-02-13 13:00:14] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:00:14] INFO: Route home entered 
+[2026-02-13 13:00:15] INFO: Cache hit for homepage items {"cache_key":"item:AK-47","count":487}
+[2026-02-13 13:00:15] INFO: HTTP request completed {"method":"GET","path":"/","status":200,"duration_ms":360.35}
+[2026-02-13 13:00:22] INFO: HTTP request started {"method":"GET","path":"/item/14"}
+[2026-02-13 13:00:22] INFO: Route itemDetails entered {"itemId":14}
+[2026-02-13 13:00:22] INFO: HTTP request completed {"method":"GET","path":"/item/14","status":200,"duration_ms":142.03}
+[2026-02-13 13:00:25] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:00:25] INFO: Route home entered 
+[2026-02-13 13:00:25] INFO: Cache hit for homepage items {"cache_key":"item:AK-47","count":487}
+[2026-02-13 13:00:25] INFO: HTTP request completed {"method":"GET","path":"/","status":200,"duration_ms":288.56}
