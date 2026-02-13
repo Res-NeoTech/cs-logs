@@ -10,6 +10,7 @@ class MainController
 {
     function home(Request $req, Response $resp, array $args): Response
     {
+
         $view = new PhpRenderer("../view");
         $view->setLayout("layout.php");
         $data = [
@@ -17,6 +18,7 @@ class MainController
         ];
         return $view->render($resp, 'home.php', $data);
     }
+
     function api(Request $req, Response $resp, array $args): Response
     {
         $resp->getBody()->write("Slim API is working !!");
