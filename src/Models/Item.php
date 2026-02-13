@@ -46,4 +46,19 @@ class Item {
 
         return self::$items;
     }
+
+    public static function getById(int $id): ?Item
+    {
+        if (empty(self::$items)) {
+            self::selectAll();
+        }
+
+        foreach (self::$items as $item) {
+            if ($item->id === $id) {
+                return $item;
+            }
+        }
+
+        return null;
+    }
 }
