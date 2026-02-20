@@ -24,7 +24,6 @@ class Item {
             return [];
         }
 
-        // Sort files by date (oldest first)
         usort($files, function($a, $b) {
             preg_match('/prices_(\d{8}_\d{6})\.json$/', $a, $matchA);
             preg_match('/prices_(\d{8}_\d{6})\.json$/', $b, $matchB);
@@ -33,7 +32,6 @@ class Item {
 
         $itemsHistory = [];
 
-        // Load all items first (no filtering yet)
         foreach ($files as $file) {
             $json = file_get_contents($file);
             $data = json_decode($json, true);
@@ -54,7 +52,6 @@ class Item {
             }
         }
 
-        // Build Item objects and assign IDs BEFORE filtering
         self::$items = [];
         $id = 1;
         foreach ($itemsHistory as $name => $history) {
