@@ -1,11 +1,3 @@
-<?php 
-
-use CsLogs\Models\Item;
-
-var_dump($item);
-
-?>
-
 <div style="max-width: 600px; margin: 20px auto; font-family: sans-serif;">
     <?php if ($item): ?>
         <h2>Item Details</h2>

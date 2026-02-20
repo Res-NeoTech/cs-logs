@@ -1,0 +1,307 @@
+[2026-02-13 12:59:41] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 12:59:41] INFO: Route home entered 
+[2026-02-13 12:59:41] INFO: Cache miss, loading items from source {"filter":"AK-47"}
+[2026-02-13 12:59:41] INFO: HTTP request completed {"method":"GET","path":"/","status":200,"duration_ms":649.59}
+[2026-02-13 13:00:06] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:00:06] INFO: Route home entered 
+[2026-02-13 13:00:06] INFO: Cache hit for homepage items {"cache_key":"item:AK-47","count":487}
+[2026-02-13 13:00:06] INFO: HTTP request completed {"method":"GET","path":"/","status":200,"duration_ms":464.38}
+[2026-02-13 13:00:14] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:00:14] INFO: Route home entered 
+[2026-02-13 13:00:15] INFO: Cache hit for homepage items {"cache_key":"item:AK-47","count":487}
+[2026-02-13 13:00:15] INFO: HTTP request completed {"method":"GET","path":"/","status":200,"duration_ms":360.35}
+[2026-02-13 13:00:22] INFO: HTTP request started {"method":"GET","path":"/item/14"}
+[2026-02-13 13:00:22] INFO: Route itemDetails entered {"itemId":14}
+[2026-02-13 13:00:22] INFO: HTTP request completed {"method":"GET","path":"/item/14","status":200,"duration_ms":142.03}
+[2026-02-13 13:00:25] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:00:25] INFO: Route home entered 
+[2026-02-13 13:00:25] INFO: Cache hit for homepage items {"cache_key":"item:AK-47","count":487}
+[2026-02-13 13:00:25] INFO: HTTP request completed {"method":"GET","path":"/","status":200,"duration_ms":288.56}
+[2026-02-13 13:07:44] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:07:45] ERROR: Unhandled exception {"method":"GET","path":"/","exception_class":"ParseError","message":"syntax error, unexpected token \"public\"","trace":"#0 /var/www/html/vendor/composer/ClassLoader.php(427): Composer\\Autoload\\{closure}('/var/www/html/v...')
+#1 /var/www/html/config/web-routes.php(14): Composer\\Autoload\\ClassLoader->loadClass('CsLogs\\\\Controll...')
+#2 /var/www/html/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(39): CsLogs\\Config\\{closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#3 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(362): Slim\\Handlers\\Strategies\\RequestResponse->__invoke(Object(Closure), Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\Routing\\Route->handle(Object(Slim\\Psr7\\Request))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(321): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(74): Slim\\Routing\\Route->run(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#9 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#10 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#11 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#12 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#13 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#14 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#15 /var/www/html/public/index.php(85): Slim\\App->run()
+#16 {main}"}
+[2026-02-13 13:07:50] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:07:50] ERROR: Unhandled exception {"method":"GET","path":"/","exception_class":"ParseError","message":"syntax error, unexpected token \"public\"","trace":"#0 /var/www/html/vendor/composer/ClassLoader.php(427): Composer\\Autoload\\{closure}('/var/www/html/v...')
+#1 /var/www/html/config/web-routes.php(14): Composer\\Autoload\\ClassLoader->loadClass('CsLogs\\\\Controll...')
+#2 /var/www/html/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(39): CsLogs\\Config\\{closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#3 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(362): Slim\\Handlers\\Strategies\\RequestResponse->__invoke(Object(Closure), Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\Routing\\Route->handle(Object(Slim\\Psr7\\Request))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(321): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(74): Slim\\Routing\\Route->run(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#9 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#10 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#11 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#12 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#13 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#14 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#15 /var/www/html/public/index.php(85): Slim\\App->run()
+#16 {main}"}
+[2026-02-13 13:08:19] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:08:21] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:08:39] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:08:39] ERROR: Unhandled exception {"method":"GET","path":"/","exception_class":"Error","message":"Typed property CsLogs\\Controllers\\MainController::$logger must not be accessed before initialization","trace":"#0 /var/www/html/config/web-routes.php(15): CsLogs\\Controllers\\MainController->home(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#1 /var/www/html/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(39): CsLogs\\Config\\{closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#2 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(362): Slim\\Handlers\\Strategies\\RequestResponse->__invoke(Object(Closure), Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#3 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\Routing\\Route->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#5 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(321): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(74): Slim\\Routing\\Route->run(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#9 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#10 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#11 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#12 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#13 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#14 /var/www/html/public/index.php(85): Slim\\App->run()
+#15 {main}"}
+[2026-02-13 13:09:20] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:09:20] ERROR: Unhandled exception {"method":"GET","path":"/","exception_class":"Error","message":"Typed property CsLogs\\Controllers\\MainController::$logger must not be accessed before initialization","trace":"#0 /var/www/html/config/web-routes.php(15): CsLogs\\Controllers\\MainController->home(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#1 /var/www/html/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(39): CsLogs\\Config\\{closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#2 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(362): Slim\\Handlers\\Strategies\\RequestResponse->__invoke(Object(Closure), Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#3 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\Routing\\Route->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#5 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(321): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(74): Slim\\Routing\\Route->run(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#9 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#10 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#11 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#12 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#13 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#14 /var/www/html/public/index.php(85): Slim\\App->run()
+#15 {main}"}
+[2026-02-13 13:09:20] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:09:20] ERROR: Unhandled exception {"method":"GET","path":"/","exception_class":"Error","message":"Typed property CsLogs\\Controllers\\MainController::$logger must not be accessed before initialization","trace":"#0 /var/www/html/config/web-routes.php(15): CsLogs\\Controllers\\MainController->home(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#1 /var/www/html/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(39): CsLogs\\Config\\{closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#2 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(362): Slim\\Handlers\\Strategies\\RequestResponse->__invoke(Object(Closure), Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#3 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\Routing\\Route->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#5 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(321): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(74): Slim\\Routing\\Route->run(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#9 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#10 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#11 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#12 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#13 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#14 /var/www/html/public/index.php(85): Slim\\App->run()
+#15 {main}"}
+[2026-02-13 13:09:20] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:09:21] ERROR: Unhandled exception {"method":"GET","path":"/","exception_class":"Error","message":"Typed property CsLogs\\Controllers\\MainController::$logger must not be accessed before initialization","trace":"#0 /var/www/html/config/web-routes.php(15): CsLogs\\Controllers\\MainController->home(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#1 /var/www/html/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(39): CsLogs\\Config\\{closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#2 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(362): Slim\\Handlers\\Strategies\\RequestResponse->__invoke(Object(Closure), Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#3 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\Routing\\Route->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#5 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(321): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(74): Slim\\Routing\\Route->run(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#9 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#10 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#11 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#12 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#13 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#14 /var/www/html/public/index.php(85): Slim\\App->run()
+#15 {main}"}
+[2026-02-13 13:09:21] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:09:21] ERROR: Unhandled exception {"method":"GET","path":"/","exception_class":"Error","message":"Typed property CsLogs\\Controllers\\MainController::$logger must not be accessed before initialization","trace":"#0 /var/www/html/config/web-routes.php(15): CsLogs\\Controllers\\MainController->home(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#1 /var/www/html/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(39): CsLogs\\Config\\{closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#2 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(362): Slim\\Handlers\\Strategies\\RequestResponse->__invoke(Object(Closure), Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#3 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\Routing\\Route->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#5 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(321): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(74): Slim\\Routing\\Route->run(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#9 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#10 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#11 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#12 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#13 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#14 /var/www/html/public/index.php(85): Slim\\App->run()
+#15 {main}"}
+[2026-02-13 13:09:21] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:09:21] ERROR: Unhandled exception {"method":"GET","path":"/","exception_class":"Error","message":"Typed property CsLogs\\Controllers\\MainController::$logger must not be accessed before initialization","trace":"#0 /var/www/html/config/web-routes.php(15): CsLogs\\Controllers\\MainController->home(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#1 /var/www/html/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(39): CsLogs\\Config\\{closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#2 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(362): Slim\\Handlers\\Strategies\\RequestResponse->__invoke(Object(Closure), Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#3 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\Routing\\Route->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#5 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(321): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(74): Slim\\Routing\\Route->run(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#9 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#10 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#11 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#12 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#13 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#14 /var/www/html/public/index.php(85): Slim\\App->run()
+#15 {main}"}
+[2026-02-13 13:09:21] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:09:21] ERROR: Unhandled exception {"method":"GET","path":"/","exception_class":"Error","message":"Typed property CsLogs\\Controllers\\MainController::$logger must not be accessed before initialization","trace":"#0 /var/www/html/config/web-routes.php(15): CsLogs\\Controllers\\MainController->home(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#1 /var/www/html/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(39): CsLogs\\Config\\{closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#2 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(362): Slim\\Handlers\\Strategies\\RequestResponse->__invoke(Object(Closure), Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#3 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\Routing\\Route->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#5 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(321): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(74): Slim\\Routing\\Route->run(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#9 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#10 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#11 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#12 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#13 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#14 /var/www/html/public/index.php(85): Slim\\App->run()
+#15 {main}"}
+[2026-02-13 13:09:22] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:09:22] ERROR: Unhandled exception {"method":"GET","path":"/","exception_class":"Error","message":"Typed property CsLogs\\Controllers\\MainController::$logger must not be accessed before initialization","trace":"#0 /var/www/html/config/web-routes.php(15): CsLogs\\Controllers\\MainController->home(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#1 /var/www/html/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(39): CsLogs\\Config\\{closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#2 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(362): Slim\\Handlers\\Strategies\\RequestResponse->__invoke(Object(Closure), Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#3 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\Routing\\Route->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#5 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(321): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(74): Slim\\Routing\\Route->run(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#9 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#10 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#11 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#12 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#13 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#14 /var/www/html/public/index.php(85): Slim\\App->run()
+#15 {main}"}
+[2026-02-13 13:09:35] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:09:35] ERROR: Unhandled exception {"method":"GET","path":"/","exception_class":"Error","message":"Typed property CsLogs\\Controllers\\MainController::$logger must not be accessed before initialization","trace":"#0 /var/www/html/config/web-routes.php(15): CsLogs\\Controllers\\MainController->home(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#1 /var/www/html/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(39): CsLogs\\Config\\{closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#2 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(362): Slim\\Handlers\\Strategies\\RequestResponse->__invoke(Object(Closure), Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#3 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\Routing\\Route->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#5 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(321): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(74): Slim\\Routing\\Route->run(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#9 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#10 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#11 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#12 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#13 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#14 /var/www/html/public/index.php(85): Slim\\App->run()
+#15 {main}"}
+[2026-02-13 13:09:50] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:09:51] ERROR: Unhandled exception {"method":"GET","path":"/","exception_class":"Error","message":"Typed property CsLogs\\Controllers\\MainController::$logger must not be accessed before initialization","trace":"#0 /var/www/html/config/web-routes.php(15): CsLogs\\Controllers\\MainController->home(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#1 /var/www/html/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(39): CsLogs\\Config\\{closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#2 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(362): Slim\\Handlers\\Strategies\\RequestResponse->__invoke(Object(Closure), Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#3 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\Routing\\Route->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#5 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(321): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(74): Slim\\Routing\\Route->run(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#9 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#10 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#11 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#12 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#13 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#14 /var/www/html/public/index.php(85): Slim\\App->run()
+#15 {main}"}
+[2026-02-13 13:09:55] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:09:56] ERROR: Unhandled exception {"method":"GET","path":"/","exception_class":"Error","message":"Typed property CsLogs\\Controllers\\MainController::$logger must not be accessed before initialization","trace":"#0 /var/www/html/config/web-routes.php(15): CsLogs\\Controllers\\MainController->home(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#1 /var/www/html/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(39): CsLogs\\Config\\{closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#2 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(362): Slim\\Handlers\\Strategies\\RequestResponse->__invoke(Object(Closure), Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#3 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\Routing\\Route->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#5 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(321): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(74): Slim\\Routing\\Route->run(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#9 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#10 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#11 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#12 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#13 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#14 /var/www/html/public/index.php(85): Slim\\App->run()
+#15 {main}"}
+[2026-02-13 13:10:05] INFO: HTTP request started {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json"}
+[2026-02-13 13:10:05] WARNING: Unhandled exception {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json","exception_class":"Slim\\Exception\\HttpNotFoundException","message":"Not found.","trace":"#0 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(62): Slim\\Middleware\\RoutingMiddleware->performRouting(Object(Slim\\Psr7\\Request))
+#1 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#2 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#3 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(85): Slim\\App->run()
+#9 {main}"}
+[2026-02-13 13:10:12] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:10:12] ERROR: Unhandled exception {"method":"GET","path":"/","exception_class":"Error","message":"Typed property CsLogs\\Controllers\\MainController::$logger must not be accessed before initialization","trace":"#0 /var/www/html/config/web-routes.php(15): CsLogs\\Controllers\\MainController->home(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#1 /var/www/html/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(39): CsLogs\\Config\\{closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#2 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(362): Slim\\Handlers\\Strategies\\RequestResponse->__invoke(Object(Closure), Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#3 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\Routing\\Route->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#5 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(321): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(74): Slim\\Routing\\Route->run(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#9 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#10 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#11 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#12 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#13 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#14 /var/www/html/public/index.php(85): Slim\\App->run()
+#15 {main}"}
+[2026-02-13 13:10:12] INFO: HTTP request started {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json"}
+[2026-02-13 13:10:12] WARNING: Unhandled exception {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json","exception_class":"Slim\\Exception\\HttpNotFoundException","message":"Not found.","trace":"#0 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(62): Slim\\Middleware\\RoutingMiddleware->performRouting(Object(Slim\\Psr7\\Request))
+#1 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#2 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#3 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(85): Slim\\App->run()
+#9 {main}"}
+[2026-02-13 13:10:44] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:10:44] ERROR: Unhandled exception {"method":"GET","path":"/","exception_class":"Error","message":"Typed property CsLogs\\Controllers\\MainController::$logger must not be accessed before initialization","trace":"#0 /var/www/html/config/web-routes.php(15): CsLogs\\Controllers\\MainController->home(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#1 /var/www/html/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php(39): CsLogs\\Config\\{closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#2 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(362): Slim\\Handlers\\Strategies\\RequestResponse->__invoke(Object(Closure), Object(Slim\\Psr7\\Request), Object(Slim\\Psr7\\Response), Array)
+#3 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\Routing\\Route->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#5 /var/www/html/vendor/slim/slim/Slim/Routing/Route.php(321): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(74): Slim\\Routing\\Route->run(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#9 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#10 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#11 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#12 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#13 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#14 /var/www/html/public/index.php(85): Slim\\App->run()
+#15 {main}"}
+[2026-02-13 13:11:57] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-13 13:11:57] INFO: Route home entered 
+[2026-02-13 13:11:57] INFO: Cache miss, loading items from source {"filter":"AK-47"}
+[2026-02-13 13:11:57] INFO: HTTP request completed {"method":"GET","path":"/","status":200,"duration_ms":611.2}
+[2026-02-13 13:12:18] INFO: HTTP request started {"method":"GET","path":"/item/14"}
+[2026-02-13 13:12:18] INFO: Route itemDetails entered {"itemId":14}
+[2026-02-13 13:12:18] INFO: HTTP request completed {"method":"GET","path":"/item/14","status":200,"duration_ms":327.72}
