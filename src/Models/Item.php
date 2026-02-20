@@ -1,5 +1,4 @@
 <?php
-
 namespace CsLogs\Models;
 
 class Item {

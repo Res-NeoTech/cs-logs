@@ -1,0 +1,262 @@
+[2026-02-20 11:56:52] INFO: HTTP request started {"method":"GET","path":"/item/14"}
+[2026-02-20 11:56:53] INFO: Route itemDetails entered {"itemId":14}
+[2026-02-20 11:56:53] INFO: HTTP request completed {"method":"GET","path":"/item/14","status":200,"duration_ms":383.23}
+[2026-02-20 11:57:06] INFO: HTTP request started {"method":"GET","path":"/item/14"}
+[2026-02-20 11:57:06] INFO: Route itemDetails entered {"itemId":14}
+[2026-02-20 11:57:06] INFO: HTTP request completed {"method":"GET","path":"/item/14","status":200,"duration_ms":296.49}
+[2026-02-20 11:57:46] INFO: HTTP request started {"method":"GET","path":"/item/14"}
+[2026-02-20 11:57:47] INFO: Route itemDetails entered {"itemId":14}
+[2026-02-20 11:57:47] INFO: HTTP request completed {"method":"GET","path":"/item/14","status":200,"duration_ms":192.37}
+[2026-02-20 11:57:48] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-20 11:57:48] INFO: Route home entered 
+[2026-02-20 11:57:48] INFO: Cache miss, loading items from source {"filter":"AK-47"}
+[2026-02-20 11:57:48] INFO: HTTP request completed {"method":"GET","path":"/","status":200,"duration_ms":494.45}
+[2026-02-20 11:59:13] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-20 11:59:13] INFO: Route home entered 
+[2026-02-20 11:59:13] INFO: Cache hit for homepage items {"cache_key":"item:AK-47","count":487}
+[2026-02-20 11:59:13] INFO: HTTP request completed {"method":"GET","path":"/","status":200,"duration_ms":419.94}
+[2026-02-20 11:59:14] INFO: HTTP request started {"method":"GET","path":"/item/14"}
+[2026-02-20 11:59:14] INFO: Route itemDetails entered {"itemId":14}
+[2026-02-20 11:59:15] INFO: HTTP request completed {"method":"GET","path":"/item/14","status":200,"duration_ms":166.37}
+[2026-02-20 12:04:09] INFO: HTTP request started {"method":"GET","path":"/item/14"}
+[2026-02-20 12:04:09] INFO: Route itemDetails entered {"itemId":14}
+[2026-02-20 12:04:09] INFO: HTTP request completed {"method":"GET","path":"/item/14","status":200,"duration_ms":274.74}
+[2026-02-20 12:04:16] INFO: HTTP request started {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json"}
+[2026-02-20 12:04:16] WARNING: Unhandled exception {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json","exception_class":"Slim\\Exception\\HttpNotFoundException","message":"Not found.","trace":"#0 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(62): Slim\\Middleware\\RoutingMiddleware->performRouting(Object(Slim\\Psr7\\Request))
+#1 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#2 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#3 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(85): Slim\\App->run()
+#9 {main}"}
+[2026-02-20 12:04:52] INFO: HTTP request started {"method":"GET","path":"/item/14"}
+[2026-02-20 12:04:52] INFO: Route itemDetails entered {"itemId":14}
+[2026-02-20 12:04:52] INFO: HTTP request completed {"method":"GET","path":"/item/14","status":200,"duration_ms":211.87}
+[2026-02-20 12:04:52] INFO: HTTP request started {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json"}
+[2026-02-20 12:04:52] WARNING: Unhandled exception {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json","exception_class":"Slim\\Exception\\HttpNotFoundException","message":"Not found.","trace":"#0 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(62): Slim\\Middleware\\RoutingMiddleware->performRouting(Object(Slim\\Psr7\\Request))
+#1 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#2 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#3 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(85): Slim\\App->run()
+#9 {main}"}
+[2026-02-20 12:04:59] INFO: HTTP request started {"method":"GET","path":"/item/14"}
+[2026-02-20 12:04:59] INFO: Route itemDetails entered {"itemId":14}
+[2026-02-20 12:04:59] INFO: HTTP request completed {"method":"GET","path":"/item/14","status":200,"duration_ms":194.33}
+[2026-02-20 12:05:00] INFO: HTTP request started {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json"}
+[2026-02-20 12:05:00] WARNING: Unhandled exception {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json","exception_class":"Slim\\Exception\\HttpNotFoundException","message":"Not found.","trace":"#0 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(62): Slim\\Middleware\\RoutingMiddleware->performRouting(Object(Slim\\Psr7\\Request))
+#1 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#2 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#3 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(85): Slim\\App->run()
+#9 {main}"}
+[2026-02-20 12:05:46] INFO: HTTP request started {"method":"GET","path":"/item/14"}
+[2026-02-20 12:05:46] INFO: Route itemDetails entered {"itemId":14}
+[2026-02-20 12:05:47] INFO: HTTP request completed {"method":"GET","path":"/item/14","status":200,"duration_ms":186.25}
+[2026-02-20 12:05:47] INFO: HTTP request started {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json"}
+[2026-02-20 12:05:47] WARNING: Unhandled exception {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json","exception_class":"Slim\\Exception\\HttpNotFoundException","message":"Not found.","trace":"#0 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(62): Slim\\Middleware\\RoutingMiddleware->performRouting(Object(Slim\\Psr7\\Request))
+#1 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#2 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#3 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(85): Slim\\App->run()
+#9 {main}"}
+[2026-02-20 12:06:37] INFO: HTTP request started {"method":"GET","path":"/item/14"}
+[2026-02-20 12:06:37] INFO: Route itemDetails entered {"itemId":14}
+[2026-02-20 12:06:37] INFO: HTTP request completed {"method":"GET","path":"/item/14","status":200,"duration_ms":258.7}
+[2026-02-20 12:06:38] INFO: HTTP request started {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json"}
+[2026-02-20 12:06:38] WARNING: Unhandled exception {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json","exception_class":"Slim\\Exception\\HttpNotFoundException","message":"Not found.","trace":"#0 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(62): Slim\\Middleware\\RoutingMiddleware->performRouting(Object(Slim\\Psr7\\Request))
+#1 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#2 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#3 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(85): Slim\\App->run()
+#9 {main}"}
+[2026-02-20 12:08:50] INFO: HTTP request started {"method":"GET","path":"/item/14"}
+[2026-02-20 12:08:50] INFO: Route itemDetails entered {"itemId":14}
+[2026-02-20 12:08:50] INFO: HTTP request completed {"method":"GET","path":"/item/14","status":200,"duration_ms":259.51}
+[2026-02-20 12:08:50] INFO: HTTP request started {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json"}
+[2026-02-20 12:08:50] WARNING: Unhandled exception {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json","exception_class":"Slim\\Exception\\HttpNotFoundException","message":"Not found.","trace":"#0 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(62): Slim\\Middleware\\RoutingMiddleware->performRouting(Object(Slim\\Psr7\\Request))
+#1 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#2 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#3 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(85): Slim\\App->run()
+#9 {main}"}
+[2026-02-20 12:09:40] INFO: HTTP request started {"method":"GET","path":"/item/14"}
+[2026-02-20 12:09:41] INFO: Route itemDetails entered {"itemId":14}
+[2026-02-20 12:09:41] INFO: HTTP request completed {"method":"GET","path":"/item/14","status":200,"duration_ms":217.48}
+[2026-02-20 12:09:41] INFO: HTTP request started {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json"}
+[2026-02-20 12:09:41] WARNING: Unhandled exception {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json","exception_class":"Slim\\Exception\\HttpNotFoundException","message":"Not found.","trace":"#0 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(62): Slim\\Middleware\\RoutingMiddleware->performRouting(Object(Slim\\Psr7\\Request))
+#1 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#2 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#3 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(85): Slim\\App->run()
+#9 {main}"}
+[2026-02-20 12:11:03] INFO: HTTP request started {"method":"GET","path":"/item/14"}
+[2026-02-20 12:11:04] INFO: Route itemDetails entered {"itemId":14}
+[2026-02-20 12:11:04] INFO: HTTP request completed {"method":"GET","path":"/item/14","status":200,"duration_ms":315.69}
+[2026-02-20 12:11:21] INFO: HTTP request started {"method":"GET","path":"/item/14"}
+[2026-02-20 12:11:21] INFO: Route itemDetails entered {"itemId":14}
+[2026-02-20 12:11:21] INFO: HTTP request completed {"method":"GET","path":"/item/14","status":200,"duration_ms":350.89}
+[2026-02-20 12:11:33] INFO: HTTP request started {"method":"GET","path":"/"}
+[2026-02-20 12:11:33] INFO: Route home entered 
+[2026-02-20 12:11:33] INFO: Cache miss, loading items from source {"filter":"AK-47"}
+[2026-02-20 12:11:33] INFO: HTTP request completed {"method":"GET","path":"/","status":200,"duration_ms":532.22}
+[2026-02-20 12:11:36] INFO: HTTP request started {"method":"GET","path":"/item/15"}
+[2026-02-20 12:11:36] INFO: Route itemDetails entered {"itemId":15}
+[2026-02-20 12:11:36] INFO: HTTP request completed {"method":"GET","path":"/item/15","status":200,"duration_ms":276.36}
+[2026-02-20 12:11:46] INFO: HTTP request started {"method":"GET","path":"/item/28"}
+[2026-02-20 12:11:46] INFO: Route itemDetails entered {"itemId":28}
+[2026-02-20 12:11:46] INFO: HTTP request completed {"method":"GET","path":"/item/28","status":200,"duration_ms":237.03}
+[2026-02-20 12:11:50] INFO: HTTP request started {"method":"GET","path":"/item/56"}
+[2026-02-20 12:11:50] INFO: Route itemDetails entered {"itemId":56}
+[2026-02-20 12:11:50] INFO: HTTP request completed {"method":"GET","path":"/item/56","status":200,"duration_ms":240.24}
+[2026-02-20 12:14:13] INFO: HTTP request started {"method":"GET","path":"/item/71"}
+[2026-02-20 12:14:13] INFO: Route itemDetails entered {"itemId":71}
+[2026-02-20 12:14:13] INFO: HTTP request completed {"method":"GET","path":"/item/71","status":200,"duration_ms":287.36}
+[2026-02-20 12:14:17] INFO: HTTP request started {"method":"GET","path":"/item/12000"}
+[2026-02-20 12:14:17] INFO: Route itemDetails entered {"itemId":12000}
+[2026-02-20 12:14:17] WARNING: Item not found {"itemId":12000}
+[2026-02-20 12:14:17] INFO: HTTP request completed {"method":"GET","path":"/item/12000","status":404,"duration_ms":299.85}
+[2026-02-20 12:14:21] INFO: HTTP request started {"method":"GET","path":"/item/77"}
+[2026-02-20 12:14:21] INFO: Route itemDetails entered {"itemId":77}
+[2026-02-20 12:14:22] INFO: HTTP request completed {"method":"GET","path":"/item/77","status":200,"duration_ms":216.94}
+[2026-02-20 12:21:37] INFO: HTTP request started {"method":"GET","path":"/item/77"}
+[2026-02-20 12:21:37] INFO: Route itemDetails entered {"itemId":77}
+[2026-02-20 12:21:37] INFO: HTTP request completed {"method":"GET","path":"/item/77","status":200,"duration_ms":313.23}
+[2026-02-20 12:22:18] INFO: HTTP request started {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json"}
+[2026-02-20 12:22:18] WARNING: Unhandled exception {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json","exception_class":"Slim\\Exception\\HttpNotFoundException","message":"Not found.","trace":"#0 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(62): Slim\\Middleware\\RoutingMiddleware->performRouting(Object(Slim\\Psr7\\Request))
+#1 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#2 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#3 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(85): Slim\\App->run()
+#9 {main}"}
+[2026-02-20 12:22:31] INFO: HTTP request started {"method":"GET","path":"/item/77"}
+[2026-02-20 12:22:31] INFO: Route itemDetails entered {"itemId":77}
+[2026-02-20 12:22:31] INFO: HTTP request completed {"method":"GET","path":"/item/77","status":200,"duration_ms":234.35}
+[2026-02-20 12:22:32] INFO: HTTP request started {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json"}
+[2026-02-20 12:22:32] WARNING: Unhandled exception {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json","exception_class":"Slim\\Exception\\HttpNotFoundException","message":"Not found.","trace":"#0 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(62): Slim\\Middleware\\RoutingMiddleware->performRouting(Object(Slim\\Psr7\\Request))
+#1 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#2 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#3 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(85): Slim\\App->run()
+#9 {main}"}
+[2026-02-20 12:22:50] INFO: HTTP request started {"method":"GET","path":"/item/77"}
+[2026-02-20 12:22:50] INFO: Route itemDetails entered {"itemId":77}
+[2026-02-20 12:22:51] INFO: HTTP request completed {"method":"GET","path":"/item/77","status":200,"duration_ms":224.97}
+[2026-02-20 12:22:51] INFO: HTTP request started {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json"}
+[2026-02-20 12:22:51] WARNING: Unhandled exception {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json","exception_class":"Slim\\Exception\\HttpNotFoundException","message":"Not found.","trace":"#0 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(62): Slim\\Middleware\\RoutingMiddleware->performRouting(Object(Slim\\Psr7\\Request))
+#1 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#2 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#3 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(85): Slim\\App->run()
+#9 {main}"}
+[2026-02-20 12:23:05] INFO: HTTP request started {"method":"GET","path":"/item/77"}
+[2026-02-20 12:23:06] INFO: Route itemDetails entered {"itemId":77}
+[2026-02-20 12:23:06] INFO: HTTP request completed {"method":"GET","path":"/item/77","status":200,"duration_ms":226.08}
+[2026-02-20 12:23:06] INFO: HTTP request started {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json"}
+[2026-02-20 12:23:06] WARNING: Unhandled exception {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json","exception_class":"Slim\\Exception\\HttpNotFoundException","message":"Not found.","trace":"#0 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(62): Slim\\Middleware\\RoutingMiddleware->performRouting(Object(Slim\\Psr7\\Request))
+#1 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#2 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#3 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(85): Slim\\App->run()
+#9 {main}"}
+[2026-02-20 12:23:13] INFO: HTTP request started {"method":"GET","path":"/item/12000"}
+[2026-02-20 12:23:13] INFO: Route itemDetails entered {"itemId":12000}
+[2026-02-20 12:23:13] WARNING: Item not found {"itemId":12000}
+[2026-02-20 12:23:13] INFO: HTTP request completed {"method":"GET","path":"/item/12000","status":404,"duration_ms":215.7}
+[2026-02-20 12:23:13] INFO: HTTP request started {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json"}
+[2026-02-20 12:23:13] WARNING: Unhandled exception {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json","exception_class":"Slim\\Exception\\HttpNotFoundException","message":"Not found.","trace":"#0 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(62): Slim\\Middleware\\RoutingMiddleware->performRouting(Object(Slim\\Psr7\\Request))
+#1 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#2 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#3 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(85): Slim\\App->run()
+#9 {main}"}
+[2026-02-20 12:23:16] INFO: HTTP request started {"method":"GET","path":"/item/10"}
+[2026-02-20 12:23:16] INFO: Route itemDetails entered {"itemId":10}
+[2026-02-20 12:23:16] WARNING: Item not found {"itemId":10}
+[2026-02-20 12:23:16] INFO: HTTP request completed {"method":"GET","path":"/item/10","status":404,"duration_ms":223.86}
+[2026-02-20 12:23:17] INFO: HTTP request started {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json"}
+[2026-02-20 12:23:17] WARNING: Unhandled exception {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json","exception_class":"Slim\\Exception\\HttpNotFoundException","message":"Not found.","trace":"#0 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(62): Slim\\Middleware\\RoutingMiddleware->performRouting(Object(Slim\\Psr7\\Request))
+#1 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#2 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#3 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(85): Slim\\App->run()
+#9 {main}"}
+[2026-02-20 12:23:47] INFO: HTTP request started {"method":"GET","path":"/item/10"}
+[2026-02-20 12:23:47] INFO: Route itemDetails entered {"itemId":10}
+[2026-02-20 12:23:47] WARNING: Item not found {"itemId":10}
+[2026-02-20 12:23:47] INFO: HTTP request completed {"method":"GET","path":"/item/10","status":404,"duration_ms":274.67}
+[2026-02-20 12:23:47] INFO: HTTP request started {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json"}
+[2026-02-20 12:23:47] WARNING: Unhandled exception {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json","exception_class":"Slim\\Exception\\HttpNotFoundException","message":"Not found.","trace":"#0 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(62): Slim\\Middleware\\RoutingMiddleware->performRouting(Object(Slim\\Psr7\\Request))
+#1 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#2 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#3 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(85): Slim\\App->run()
+#9 {main}"}
+[2026-02-20 12:23:51] INFO: HTTP request started {"method":"GET","path":"/item/200"}
+[2026-02-20 12:23:51] INFO: Route itemDetails entered {"itemId":200}
+[2026-02-20 12:23:52] INFO: HTTP request completed {"method":"GET","path":"/item/200","status":200,"duration_ms":258.37}
+[2026-02-20 12:23:52] INFO: HTTP request started {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json"}
+[2026-02-20 12:23:52] WARNING: Unhandled exception {"method":"GET","path":"/.well-known/appspecific/com.chrome.devtools.json","exception_class":"Slim\\Exception\\HttpNotFoundException","message":"Not found.","trace":"#0 /var/www/html/vendor/slim/slim/Slim/Routing/RouteRunner.php(62): Slim\\Middleware\\RoutingMiddleware->performRouting(Object(Slim\\Psr7\\Request))
+#1 /var/www/html/public/index.php(34): Slim\\Routing\\RouteRunner->handle(Object(Slim\\Psr7\\Request))
+#2 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(283): {closure}(Object(Slim\\Psr7\\Request), Object(Slim\\Routing\\RouteRunner))
+#3 /var/www/html/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php(77): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#4 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\\Middleware\\ErrorMiddleware->process(Object(Slim\\Psr7\\Request), Object(Psr\\Http\\Server\\RequestHandlerInterface@anonymous))
+#5 /var/www/html/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\\Http\\Server\\RequestHandlerInterface@anonymous->handle(Object(Slim\\Psr7\\Request))
+#6 /var/www/html/vendor/slim/slim/Slim/App.php(209): Slim\\MiddlewareDispatcher->handle(Object(Slim\\Psr7\\Request))
+#7 /var/www/html/vendor/slim/slim/Slim/App.php(193): Slim\\App->handle(Object(Slim\\Psr7\\Request))
+#8 /var/www/html/public/index.php(85): Slim\\App->run()
+#9 {main}"}
