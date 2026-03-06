@@ -2,13 +2,17 @@
 
 namespace CsLogs\Models;
 
+use CsLogs\Utils\Logger;
+
 class Item {
     public ?int $id = null;
     public ?string $name = null;
     public ?float $price = null;
     public ?int $volume = null;
     public ?array $history = [];
-    public static array $items = []; 
+    public static array $items = [];
+    
+    private const API_URL = 'https://market.csgo.com/api/v2/prices/USD.json';
 
     public static function selectAll(?string $nameFilter = null): array
     {
@@ -98,5 +102,57 @@ class Item {
             return $match[1]; // e.g., 20260206_151000
         }
         return null;
+    }
+    public static function fetchMarketData(): array {
+        if (!function_exists('curl_init')) {
+            return [];
+        }
+
+        $ch = curl_init(self::API_URL);
+        curl_setopt_array($ch, [
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_TIMEOUT => 15,
+            CURLOPT_CONNECTTIMEOUT => 10,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTPGET => true,
+        ]);
+
+        $response = curl_exec($ch);
+
+        if ($response === false) {
+            $error = curl_error($ch);
+            curl_close($ch);
+            Logger::logError("Failed to fetch market data: $error");
+            return [];
+        }
+
+        $httpCode = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        curl_close($ch);
+        self::saveMarketSnapshot($response);
+
+        if ($httpCode < 200 || $httpCode >= 300) {
+            Logger::logWarning("Failed to fetch market data: HTTP $httpCode");
+            return [];
+        }
+
+        $decoded = json_decode($response, true);
+
+        return is_array($decoded) ? $decoded : [];
+    }
+
+    public static function saveMarketSnapshot(string $response): void
+    {
+        $dir = __DIR__ . '/../logs/prices/';
+
+        if (!is_dir($dir) && !mkdir($dir, 0777, true) && !is_dir($dir)) {
+            Logger::logWarning("Failed to create prices log directory: $dir");
+            return;
+        }
+
+        $filePath = $dir . 'prices_' . date('Ymd_His') . '.json';
+
+        if (file_put_contents($filePath, $response) === false) {
+            Logger::logWarning("Failed to save market snapshot: $filePath");
+        }
     }
 }

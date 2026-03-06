@@ -12,6 +12,14 @@ $dotenv->load();
 // 2. On instancie l'application
 $app = AppFactory::create();
 
+$container = $app->getContainer();
+$container['notFoundHandler'] = function ($c) {
+    return function ($request, $response) use ($c) {
+        $view = new \Slim\Views\PhpRenderer("../view");
+        return $view->render($response->withStatus(404), '404.php');
+    };
+};
+
 // 3. Routing
 require_once '../config/web-routes.php';
 

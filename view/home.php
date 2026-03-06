@@ -14,6 +14,7 @@ if (is_string($items)) {
 
 if (empty($items)) {
   $items = Item::selectAll("AK-47");
+  Item::saveMarketSnapshot(json_encode(Item::fetchMarketData()));
 
   $redis->set("item:AK-47", json_encode($items), 'EX', 60 * 5);
 }
