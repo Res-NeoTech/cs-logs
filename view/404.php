@@ -40,15 +40,15 @@
                         404 - Page Not Found
                     </h1>
                     <p class="mt-1 text-sm text-slate-400">
-                        The page you are looking for does not exist.
+                        La page n'existe pas.
                     </p>
                 </div>
 
                 <!-- MAIN CONTENT -->
                 <div class="space-y-6">
                     <div class="text-center">
-                        <p class="text-lg text-slate-300">Oops! It seems like the page you're trying to reach doesn't exist.</p>
-                        <a href="/" class="mt-4 inline-block px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-600 transition">Go Back Home</a>
+                        <p class="text-lg text-slate-300">Oops! Il semble que la page que vous essayez d'accéder n'existe pas.</p>
+                        <a href="/" class="mt-4 inline-block px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-600 transition">Retourner à l'accueil</a>
                     </div>
                 </div>
 

@@ -3,10 +3,11 @@
 use CsLogs\Utils\LoggerFactory;
 use Slim\Factory\AppFactory;
 use Dotenv\Dotenv;
+use Slim\Exception\HttpMethodNotAllowedException;
+use Slim\Exception\HttpNotFoundException;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Server\RequestHandlerInterface as RequestHandler;
-use Throwable;
 
 // 1. On charge l'autoloader de Composer
 require __DIR__ . '/../vendor/autoload.php';
@@ -17,14 +18,6 @@ $dotenv->load();
 // 2. On instancie l'application
 $app = AppFactory::create();
 $logger = LoggerFactory::create();
-
-$container = $app->getContainer();
-$container['notFoundHandler'] = function ($c) {
-    return function ($request, $response) use ($c) {
-        $view = new \Slim\Views\PhpRenderer("../view");
-        return $view->render($response->withStatus(404), '404.php');
-    };
-};
 
 // 3. Routing
 require_once __DIR__ . '/../config/web-routes.php';
@@ -55,7 +48,7 @@ $errorMiddleware = $app->addErrorMiddleware(true, true, true);
 $errorMiddleware->setDefaultErrorHandler(
     function (
         Request $request,
-        Throwable $exception,
+        \Throwable $exception,
         bool $displayErrorDetails
     ) use ($app, $logger): Response {
         $statusCode = 500;
@@ -77,6 +70,12 @@ $errorMiddleware->setDefaultErrorHandler(
             'message' => $exception->getMessage(),
             'trace' => $exception->getTraceAsString(),
         ]);
+
+        if ($exception instanceof HttpNotFoundException || $exception instanceof HttpMethodNotAllowedException) {
+            $view = new \Slim\Views\PhpRenderer(__DIR__ . '/../view');
+            $response = $app->getResponseFactory()->createResponse(404);
+            return $view->render($response, '404.php');
+        }
 
         $response = $app->getResponseFactory()->createResponse($statusCode);
         $response->getBody()->write(
