@@ -7,8 +7,7 @@
     <title><?= $title ?></title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <style>
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js" defer></script>
 </head>
 
 <body class="min-h-screen bg-slate-950 text-slate-100 antialiased">

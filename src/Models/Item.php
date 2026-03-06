@@ -1,5 +1,4 @@
 <?php
-
 namespace CsLogs\Models;
 
 use CsLogs\Utils\Logger;
@@ -28,7 +27,6 @@ class Item {
             return [];
         }
 
-        // Sort files by date (oldest first)
         usort($files, function($a, $b) {
             preg_match('/prices_(\d{8}_\d{6})\.json$/', $a, $matchA);
             preg_match('/prices_(\d{8}_\d{6})\.json$/', $b, $matchB);
@@ -37,7 +35,6 @@ class Item {
 
         $itemsHistory = [];
 
-        // Load all items first (no filtering yet)
         foreach ($files as $file) {
             $json = file_get_contents($file);
             $data = json_decode($json, true);
@@ -58,7 +55,6 @@ class Item {
             }
         }
 
-        // Build Item objects and assign IDs BEFORE filtering
         self::$items = [];
         $id = 1;
         foreach ($itemsHistory as $name => $history) {
@@ -83,9 +79,7 @@ class Item {
 
     public static function getById(int $id): ?Item
     {
-        if (empty(self::$items)) {
-            self::selectAll();
-        }
+        self::selectAll("AK-47");
 
         foreach (self::$items as $item) {
             if ($item->id === $id) {
